@@ -6,6 +6,7 @@ function App() {
       <div className="text-center">
         Add shit here about myself...
       </div>
+      <div className="text-center">and maybe a little more...</div>
     </>
   )
 }
