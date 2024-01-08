@@ -11,11 +11,11 @@ const Navbar = ({ routes }) => {
   }
 
   return (
-    <nav className="bg-gray-300 shadow-md h-auto border-b-1 border-gray-800">
+    <nav className="bg-transparent h-auto border-b-1 border-gray-800">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 pl-10 pr-10">
         {/* Personal Logo */}
-        <div className="flex items-center">
-          <h1 className="text-2xl font-bold">Hi, I'm Preston !</h1>
+        <div className="border-2 border-text rounded-md px-3 py-0">
+          <h1 className="text-5xl font-bold text-text font-Genos">P</h1>
         </div>
 
         {/* Navigation Routes */}
@@ -24,7 +24,7 @@ const Navbar = ({ routes }) => {
             {allNavItems}
             <li>
               {/* add button functionality for resume downloading */}
-              <button className="border-2 border-gray-800 rounded-md p-2">
+              <button className="border-2 border-text rounded-md text-text bg-tertiary p-2">
                 Download Resume
               </button>
             </li>
