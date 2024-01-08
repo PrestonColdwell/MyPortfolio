@@ -22,9 +22,9 @@ const About = () => {
         </div>
       </div>
 
-      <div>
-        <p className="text-center text-text">
-          I'm a software engineer that excels in designing and creating exceptional digital experiences. Right now, I'm devoting my time and efforts to the open-source community, specifically toward my team's product, LogYard. I'd love to connect regarding potential opportunities so please feel free to reach out!
+      <div className="max-w-screen-lg mx-auto px-8">
+        <p className="text-center text-text text-lg">
+          I'm a software engineer that excels in designing and creating exceptional digital experiences. Right now, I'm devoting my time and efforts to the open-source community, specifically toward my team's product, LogYard. I'd love to connect regarding potential opportunities so please feel free to reach out and connect!
         </p>
       </div>
 
