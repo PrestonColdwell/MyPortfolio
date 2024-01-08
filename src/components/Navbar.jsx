@@ -11,20 +11,23 @@ const Navbar = ({ routes }) => {
   }
 
   return (
-    <nav className="bg-transparent h-auto border-b-1 border-gray-800">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 pl-10 pr-10">
+    <nav className="bg-transparent h-auto">
+      <div className="max-w-screen-xl md:flex md:flex-wrap justify-between mx-auto p-4 pl-10 pr-10">
         {/* Personal Logo */}
-        <div className="border-2 border-text rounded-md px-3 py-0">
+        <div className="border-2 border-text rounded-md px-3 pb-1 max-w-fit mx-auto md:mx-0">
           <h1 className="text-5xl font-bold text-text font-Genos">P</h1>
         </div>
 
         {/* Navigation Routes */}
-        <div className="hidden w-full md:block md:w-auto">
+        <div className="w-full md:block md:w-auto">
           <ul className="font-medium items-center flex flex-col p-4 md:p-0 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0">
             {allNavItems}
             <li>
-              {/* add button functionality for resume downloading */}
-              <button className="border-2 border-text rounded-md text-text bg-tertiary p-2">
+              {/* Download Resume Button */}
+              <button 
+                className="border-2 border-text rounded-md text-text bg-tertiary p-2"
+                onClick={() => {console.log('button clicked - not set up yet though')}}
+              >
                 Download Resume
               </button>
             </li>

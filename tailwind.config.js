@@ -14,7 +14,7 @@ export default {
     colors: {
       'primary': '#242424', // Charcoal
       'secondary': '#7C7C7C', // Gray
-      'tertiary': '#194FA5', // Blue
+      'tertiary': '#3373DA', // Blue
       'text': '#CACACA', // Light Gray
     }
   },
