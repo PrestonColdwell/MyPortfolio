@@ -5,7 +5,7 @@ const MainRouter = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex flex-col h-fvh sm:h-screen bg-primary pb-16 sm:pb-0">
+    <div className="relative flex flex-col h-fvh sm:h-fill bg-primary pb-16 sm:pb-0">
       <Navbar
         routes={[
           [ 'Home', () => { navigate('/')} ],
