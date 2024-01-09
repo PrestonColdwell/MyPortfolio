@@ -5,10 +5,10 @@ const MainRouter = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col h-screen bg-primary">
+    <div className="relative flex flex-col h-fvh sm:h-screen bg-primary pb-16 sm:pb-0">
       <Navbar
         routes={[
-          [ 'About', () => { navigate('/')} ],
+          [ 'Home', () => { navigate('/')} ],
           [ 'Experience', () => { navigate('/experience')} ],
           [ 'Contact', () => { navigate('/contact')} ],
         ]}

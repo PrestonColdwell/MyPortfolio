@@ -1,7 +1,7 @@
 const NavItem = ({ label, func }) => {
   return (
     <li>
-      <button className="border-none md:border-b-2 border-text text-text" onClick={func}>{label}</button>
+      <button className="border-b-2 border-text text-text mb-2 md:mb-0" onClick={func}>{label}</button>
     </li>
   );
 };
