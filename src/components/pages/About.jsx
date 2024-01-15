@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className=" h-lvh">
+    <div className="h-dvh">
       <div className="relative flex flex-wrap md:flex-nowrap text-text mx-auto mt-12 sm:mt-18 md:mt-24 max-w-screen-lg gap-6 md:gap-12 md:px-10">
         <div className="p-4 mx-auto">
           {/* design box */}

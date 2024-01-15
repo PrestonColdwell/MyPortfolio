@@ -1,6 +1,8 @@
 import React from "react";
 import NavItem from "./NavItem";
 
+import PrestonColdwellResume from "/Resume.pdf"
+
 const Navbar = ({ routes }) => {
   const allNavItems = [];
 
@@ -20,17 +22,17 @@ const Navbar = ({ routes }) => {
         </div>
 
         {/* Navigation Routes */}
-        <div className="w-fit mx-auto md:mx-0 lg:w-auto">
-          <ul className="font-medium items-center flex flex-row space-x-6 my-4 md:flex-row md:space-x-8 md:mt-0">
+        <div className="w-fit mx-auto md:mx-0 lg:w-auto my-auto">
+          <ul className="font-medium items-center flex flex-row space-x-6 my-4 md:flex-row md:space-x-8">
             {allNavItems}
             <li>
               {/* Download Resume Button */}
-              <button 
-                className="border-2 border-text rounded-md text-text bg-tertiary p-2"
-                onClick={() => {console.log('button clicked - not set up yet though')}}
-              >
-                Download Resume
-              </button>
+              <a 
+                className="border-2 border-text rounded-md text-text bg-tertiary p-2" 
+                href={PrestonColdwellResume} 
+                download={PrestonColdwellResume}>
+                  Download Resume
+              </a>
             </li>
           </ul>
         </div>

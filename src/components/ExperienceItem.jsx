@@ -16,9 +16,13 @@ const ExperienceItem = ( {title, description, tools, images, link} ) => {
       </ul>
       {link && 
       <p className="text-lg">
-        Check it out 
-        <span><a className='text-tertiary hover:text-text hover:cursor-pointer' href={link}>here</a></span>
-        !
+        Check it out (
+        <span><a 
+          className='text-tertiary hover:text-text hover:cursor-pointer' 
+          href={link}>
+            here
+        </a></span>
+        )!
       </p>}
       
       <div className="flex flex-wrap gap-2 pt-4">
