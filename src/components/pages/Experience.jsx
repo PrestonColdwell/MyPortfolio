@@ -16,7 +16,7 @@ const Experience = () => {
       [
         'JavaScript', 'TypeScript', 'ReactJS', 'React Router', 'Redux', 'NodeJS', 'ExpressJS', 'NoSQL','MongoDB', 'Vitest', 'Supertest', 'Cypress', 'bcrypt', 'C3.js', 'HTML5', 'CSS', 'TailwindCSS', 'Vite', 'Docker'
       ],
-      ['/LogYard1.png', '/LogYard2.png'],
+      ['/LogYard3.png', '/LogYard1.png', '/LogYard2.png'],
       ['https://www.logyard.io']
     ]
   ];
