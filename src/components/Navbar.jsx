@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
 
-import PrestonColdwellResume from "/Resume.pdf"
+import PrestonColdwellResume from "/PrestonColdwellResume.pdf"
 
 const Navbar = ({ routes }) => {
   const allNavItems = [];

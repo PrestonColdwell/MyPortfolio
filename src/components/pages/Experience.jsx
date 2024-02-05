@@ -3,10 +3,18 @@ import ExperienceItem from "../ExperienceItem.jsx";
 const Experience = () => {
   const experiences = [
     [
+      'Your Home Sold Guarenteed Realty (YHSGR)', 
+      'IN PROGRESS! Currently implementing and iterating on the entirety of the employee and performance analytics platform for the YHSGR team. The purpose of this application is to accurately track pending and closed agent transactions as well as report them to the broker for futher analysis.',
+      [
+        'JavaScript', 'TypeScript', 'ReactJS', 'NextJS', 'SQL', 'PostgreSQL', 'RDS', 'NextAuth', 'OAuth', 'Two-Factor-Authentication (2FA)', 'bcrypt', 'Jest', 'Cypress'
+      ],
+      ['/YHSGRMain.png'],
+    ],
+    [
       'LogYard', 
       'LogYard is a lightweight and robust logging visualization tool that was designed with other developers in mind. With custom, context-bound logs, users of our application can know where their logs are coming from - whether that be a specific Kubernetes pod or cluster, or more simply, which directory it originated in. These logs can then be sorted, filtered, grouped and visualized using real-time graphical interfaces based on individual contexts or time.',
       [
-        'JavaScript', 'TypeScript', 'ReactJS', 'React Router', 'Redux', 'NodeJS', 'ExpressJS', 'NoSQL Database', 'MongoDB', 'Vitest', 'Supertest', 'Cypress', 'bcrypt', 'C3.js', 'HTML5', 'CSS', 'TailwindCSS', 'Vite', 'Docker'
+        'JavaScript', 'TypeScript', 'ReactJS', 'React Router', 'Redux', 'NodeJS', 'ExpressJS', 'NoSQL','MongoDB', 'Vitest', 'Supertest', 'Cypress', 'bcrypt', 'C3.js', 'HTML5', 'CSS', 'TailwindCSS', 'Vite', 'Docker'
       ],
       ['/LogYard1.png', '/LogYard2.png'],
       ['https://www.logyard.io']
