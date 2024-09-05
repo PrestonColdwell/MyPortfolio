@@ -1,9 +1,9 @@
 // import Navbar from "./Navbar";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const MainRouter = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div style={{ width: "100%", height: "100%", border: "1px solid black" }}>
