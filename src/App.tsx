@@ -3,15 +3,19 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainRouter from './components/MainRouter';
 
+import About from './components/pages/About';
+import Experience from './components/pages/Experience';
+import Contact from './components/pages/Contact';
+
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainRouter />}>
-          {/* <Route path='/' element={<About />}/>
+          <Route path='/' element={<About />}/>
           <Route path='/experience' element={<Experience />}/>
-          <Route path='/contact' element={<Contact />}/> */}
+          <Route path='/contact' element={<Contact />}/>
         </Route>
       </Routes>
     </BrowserRouter>
