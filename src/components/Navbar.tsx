@@ -11,7 +11,7 @@ import {
 } from "./ui";
 import { cn } from "@/lib/utils";
 import React from "react";
-// import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -53,6 +53,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Navbar = () => {
   return (
+    <>
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -115,6 +116,10 @@ const Navbar = () => {
         </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
+    <Link to='/'>Home</Link>
+    <Link to='/experience'>Experience</Link>
+    <Link to='/contact'>Contact</Link>
+    </>
   );
 };
 
