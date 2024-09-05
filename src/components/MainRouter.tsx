@@ -16,7 +16,7 @@ const MainRouter = () => {
           [ 'Contact', () => { navigate('/contact')} ],
         ]}
       /> */}
-        App Content Goes Here
+        NOTE:: I am in the middle of recreating my portfolio - i know its ugly - dont judge...
         <Outlet />
       </div>
     </div>
