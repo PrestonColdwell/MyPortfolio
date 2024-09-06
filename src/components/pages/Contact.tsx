@@ -29,7 +29,7 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <div className="h-svh text-text max-w-screen-xl mx-auto m-8">
+    <div className="text-text max-w-screen-xl mx-auto m-8">
       <div className="flex flex-col border-2 border-text/50 rounded-xl p-8 text-center">
         <p className="text-nowrap text-4xl pb-4 underline">Contact Me!</p>
         <ul className="">
