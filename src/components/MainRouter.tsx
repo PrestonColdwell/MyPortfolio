@@ -20,7 +20,7 @@ const Navbar = () => {
 const MainRouter = () => {
   return (
     <>
-      <div className="fixed w-full">
+      <div className="fixed w-full pointer-events-auto">
         <Navbar />
       </div>
       <Outlet />
