@@ -1,18 +1,44 @@
+import { useRef } from "react";
 import ExperienceItem from "../ExperienceItem.tsx";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  Card,
+  CardContent,
+} from "../ui/index.tsx";
+import Autoplay from "embla-carousel-autoplay";
 const Experience = () => {
   const experiences = [
     [
+      "BoxLock",
+      "BoxLock's mission is to provide innovative, intelligent access control solutions that enhance security, operational efficiency, and accountability for businesses across various industries, ensuring the safety and integrity of their assets. With the BoxLock platform, businesses can easily manage and monitor access to their assets, track and report on asset usage, and integrate with other systems to streamline operations.",
+      [
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "HTML5",
+        "CSS",
+        "NodeJS",
+        "SQL (PostgreSQL)",
+        "AWS (Amplify, Cognito, EC2, Lambda, S3, RDS, CloudWatch)",
+      ],
+      ["/BoxLock1.png", "/BoxLock2.png", "/BoxLock3.png"],
+    ],
+    [
       "Your Home Sold Guarenteed Realty (YHSGR)",
-      "IN PROGRESS! Currently implementing and iterating on the entirety of the employee and performance analytics platform for the YHSGR team. The purpose of this application is to accurately track pending and closed agent transactions as well as report them to the broker for futher analysis.",
+      "Implemented and iterated on the entirety of the employee and performance analytics platform for the YHSGR team. The purpose of this application is to accurately track pending and closed agent transactions as well as report them to the broker for futher analysis.",
       [
         "JavaScript",
         "TypeScript",
         "ReactJS",
         "NextJS",
-        "SQL",
-        "PostgreSQL",
-        "RDS",
+        "HTML5",
+        "CSS",
+        "SQL (PostgreSQL)",
+        "AWS (RDS)",
         "NextAuth",
         "OAuth",
         "Two-Factor-Authentication (2FA)",
@@ -29,12 +55,10 @@ const Experience = () => {
         "JavaScript",
         "TypeScript",
         "ReactJS",
-        "React Router",
         "Redux",
         "NodeJS",
         "ExpressJS",
-        "NoSQL",
-        "MongoDB",
+        "NoSQL (MongoDB)",
         "Vitest",
         "Supertest",
         "Cypress",
@@ -110,6 +134,8 @@ const Experience = () => {
     ],
   ];
 
+  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
+
   return (
     <div className="text-text max-w-screen-xl mx-auto pt-4 pb-24">
       <div>
@@ -147,6 +173,47 @@ const Experience = () => {
         </div>
       </div>
     </div>
+    // <div className=" border-2 border-tertiaryLight rounded-3xl p-6 text-center bg-secondaryDark/90 mx-8">
+    //   <h2 className="text-2xl">Your Home Sold Guaranteed Realty (YHSGR)</h2>
+    //   <Carousel
+    //     plugins={[plugin.current]}
+    //     className="mt-10 max-w-lg mx-auto pointer-events-auto"
+    //     onMouseEnter={plugin.current.stop}
+    //     onMouseLeave={plugin.current.reset}
+    //   >
+    //     <CarouselContent>
+    //       <CarouselItem key="a1">
+    //         <div className="p-1">
+    //           <Card>
+    //             <CardContent className="flex items-center justify-center p-6">
+    //               <img src="/YHSGRMain.png" alt="YHSGR" />
+    //             </CardContent>
+    //           </Card>
+    //         </div>
+    //       </CarouselItem>
+    //       <CarouselItem key="a2">
+    //         <div className="p-1">
+    //           <Card>
+    //             <CardContent className="flex items-center justify-center p-6">
+    //               <img src="/YHSGRMain.png" alt="YHSGR" />
+    //             </CardContent>
+    //           </Card>
+    //         </div>
+    //       </CarouselItem>
+    //       <CarouselItem key="a3">
+    //         <div className="p-1">
+    //           <Card>
+    //             <CardContent className="flex items-center justify-center p-6">
+    //               <img src="/YHSGRMain.png" alt="YHSGR" />
+    //             </CardContent>
+    //           </Card>
+    //         </div>
+    //       </CarouselItem>
+    //     </CarouselContent>
+    //     <CarouselPrevious />
+    //     <CarouselNext />
+    //   </Carousel>
+    // </div>
   );
 };
 

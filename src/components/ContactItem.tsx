@@ -14,18 +14,22 @@ const ContactItem = ({
   email,
 }: ContactItemProps) => {
   return (
-    <li key={platform} className="p-4">
+    <li key={platform} className="p-4 pointer-events-auto">
       {link && (
         <a className="flex flex-row items-center text-3xl" href={link}>
           <img className="h-12 pr-4" src={logo} alt="Logo for contact source" />
-          {handle}
         </a>
       )}
       {email && (
-        <div className="flex flex-row items-center text-3xl">
-          <img className="h-12 pr-4" src={logo} alt="Logo for contact source" />
-          {handle}
-        </div>
+        <a href="mailto:pscoldwell@gmail.com?subject=Professional Interest">
+          <div className="flex flex-row items-center text-3xl">
+            <img
+              className="h-12 pr-4"
+              src={logo}
+              alt="Logo for contact source"
+            />
+          </div>
+        </a>
       )}
     </li>
   );

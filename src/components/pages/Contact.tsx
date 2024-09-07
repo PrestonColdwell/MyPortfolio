@@ -29,10 +29,10 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <div className="text-text max-w-screen-xl mx-auto m-8">
-      <div className="flex flex-col border-2 border-text/50 rounded-xl p-8 text-center">
+    <div className="mt-16 bg-primaryDark/80 w-fit mx-auto rounded-xl">
+      <div className="flex flex-col p-8 text-center">
         <p className="text-nowrap text-4xl pb-4 underline">Contact Me!</p>
-        <ul className="">
+        <ul className="flex mx-auto">
           {contacts.map(contact => {
             return (
               <ContactItem platform={contact.platform} logo={contact.logo} handle={contact.handle} link={contact.link} email={contact.email}/>

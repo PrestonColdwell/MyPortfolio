@@ -14,7 +14,7 @@ const ExperienceItem = ({
   link,
 }: ExperienceItemProps) => {
   return (
-    <div className="text-text p-4 border-2 border-secondary rounded-lg mb-8">
+    <div className="text-text p-4 border-2 border-whiteDark rounded-xl bg-primaryDark/80 mb-8">
       <p className="text-3xl border-b-2 w-fit mb-4">{title}</p>
       <p className="pb-4 text-lg">{description}</p>
       <p className="text-lg">Tech Stack Used:</p>
