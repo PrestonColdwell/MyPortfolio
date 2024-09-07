@@ -1,15 +1,15 @@
-import { useRef } from "react";
+// import { useRef } from "react";
 import ExperienceItem from "../ExperienceItem.tsx";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-  Card,
-  CardContent,
-} from "../ui/index.tsx";
-import Autoplay from "embla-carousel-autoplay";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselPrevious,
+//   CarouselNext,
+//   Card,
+//   CardContent,
+// } from "../ui/index.tsx";
+// import Autoplay from "embla-carousel-autoplay";
 const Experience = () => {
   const experiences = [
     [
@@ -134,7 +134,7 @@ const Experience = () => {
     ],
   ];
 
-  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
+  // const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
 
   return (
     <div className="text-text max-w-screen-xl mx-auto pt-4 pb-24">

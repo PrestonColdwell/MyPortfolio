@@ -9,7 +9,7 @@ interface ContactItemProps {
 const ContactItem = ({
   platform,
   logo,
-  handle,
+  // handle,
   link,
   email,
 }: ContactItemProps) => {
