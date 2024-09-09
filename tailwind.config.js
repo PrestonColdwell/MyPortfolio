@@ -20,6 +20,7 @@ module.exports = {
       creamLight: "#dddace",
       whiteDark: "#eaeaea",
       whiteLight: "#f2f3f4",
+      link: "#007bff",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
