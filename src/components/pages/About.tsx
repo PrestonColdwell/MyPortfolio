@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
 const About = () => {
@@ -51,20 +52,25 @@ const About = () => {
           stack, striving to deliver a product that is both seamless and highly
           functional for our users. My role involves not just building features
           but also ensuring that they contribute meaningfully to the overall
-          user experience and meet our high standards of performance. 
-          <br/>
-          <br/>
-          In my
-          previous role with LogYard, I contributed to the open-source community
-          by creating tools that simplify workflows for developers. This
-          experience has deepened my commitment to crafting solutions that make
-          a tangible difference in the way people work. I’m passionate about
-          developing tools and systems that ease tasks and improve efficiency,
-          reflecting my belief in the value of practical, user-focused
-          engineering.
-          <br/>
-          <br/>
-          If you have an interest in my work or simply would like to connect, I would love to hear from you! Feel free to reach out to me at using any of the contact methods <a href="/contact" className="text-link underline pointer-events-auto">HERE</a>.
+          user experience and meet our high standards of performance.
+          <br />
+          <br />
+          In my previous role with LogYard, I contributed to the open-source
+          community by creating tools that simplify workflows for developers.
+          This experience has deepened my commitment to crafting solutions that
+          make a tangible difference in the way people work. I’m passionate
+          about developing tools and systems that ease tasks and improve
+          efficiency, reflecting my belief in the value of practical,
+          user-focused engineering.
+          <br />
+          <br />
+          If you have an interest in my work or simply would like to connect, I
+          would love to hear from you! Feel free to reach out to me at using any
+          of the contact methods{" "}
+          <Link className="text-link pointer-events-auto" to="/contact">
+            HERE
+          </Link>
+          .
         </p>
       </div>
     </div>
