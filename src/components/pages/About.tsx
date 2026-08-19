@@ -31,7 +31,7 @@ const About = () => {
           />
         </div>
 
-        <div>This is currently in development. Thank you for your understanding.</div>
+        <div>This is currently in a new development process. Thank you for your understanding.</div>
 
         <div className="m-auto mb-10 sm:my-auto size-72">
           <img
